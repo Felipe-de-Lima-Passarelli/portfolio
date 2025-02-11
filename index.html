@@ -119,6 +119,33 @@
             text-decoration: underline;
         }
 
+        .sobre-mim-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .texto {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .imagem {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .imagem img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            margin-top: -40px;
+        }
+
+
         footer {
             text-align: center;
             padding: 1.5rem;
@@ -143,7 +170,6 @@
             text-decoration: underline;
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
@@ -166,9 +192,16 @@
     </header>
 
     <main>
-        <section>
+        <section id="sobre-mim">
             <h2>Sobre Mim</h2>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação. Estou em transição de carreira, trazendo minha experiência em Engenharia Civil para o mundo da programação. Tenho me dedicado ao desenvolvimento de projetos que unem criatividade e eficiência, com foco em Python, automação e análise de dados.</p>
+            <div class="sobre-mim-container">
+                <div class="texto">
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação. Estou em transição de carreira, trazendo minha experiência em Engenharia Civil para o mundo da programação. Tenho me dedicado ao desenvolvimento de projetos que unem criatividade e eficiência, com foco em Python, automação e análise de dados.</p>
+                </div>
+                <div class="imagem">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHSQEZHSU5p4Q/profile-displayphoto-shrink_800_800/B4DZOy4Bo3HcAc-/0/1733872852002?e=1744848000&v=beta&t=bHddqXiblevlzwss4qDRuupALOHBVb6SBpZeMgraPbQ" alt="Minha Foto">
+                </div>
+            </div>
         </section>
 
         <section>
