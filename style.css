@@ -76,6 +76,10 @@ section ul {
   padding-left: 40px;
 }
 
+ul.ulSelected {
+  margin-bottom: 50px;
+}
+
 .sobre-mim-container {
   display: flex;
   align-items: flex-start;
